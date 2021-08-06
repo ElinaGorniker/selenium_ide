@@ -1,0 +1,981 @@
+{
+  "id": "12778c5b-f7b0-4ff2-9af7-3bbba14d3f1c",
+  "version": "2.0",
+  "name": "Testset for demosite \"Bank\"",
+  "url": "https://www.globalsqa.com",
+  "tests": [{
+    "id": "8f12077d-9def-461d-ae46-5ead02b26483",
+    "name": "Customer can login",
+    "commands": [{
+      "id": "303b7bd2-044b-4b36-882c-45a2e253a29c",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25ae65c7-a26c-4a3e-810b-3f9adc621727",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad337b75-0339-45ee-8887-db2fb0cb0c1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dffc44d0-429e-4575-bd87-abe4d4b5eba4",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e0b953-2870-4f23-ba04-0f2fae0f129f",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "77603fac-0851-4c6f-b21a-b6eb81809f75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "632cb7a5-39ec-4faf-ad51-9112bf92b438",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.center > .ng-binding:nth-child(1)",
+      "targets": [
+        ["css=.center > .ng-binding:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'1001 ')]", "xpath:innerText"]
+      ],
+      "value": "1001 "
+    }, {
+      "id": "93e7845b-89f8-4fb6-8cfd-1cab578d5e51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b45fd1e9-4c4a-4b20-9a48-cbbae4a9a1da",
+    "name": "Customer can add money to deposit",
+    "commands": [{
+      "id": "1ac79432-fecc-4dd9-bbdd-b3bf04169e41",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1ca02b1-52f3-4303-9654-b49d51659b78",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b412cd87-d907-464b-8769-89072df3899c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6be06e0b-adff-41a3-b0c3-49b8960d430d",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d71326e-55b6-4ad9-9b23-d01aafb68fd6",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "f60de79c-c6c3-4fd6-bfe6-b653c0bb70d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74e9196e-8f1f-4cba-993d-cd1235a8e13f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Deposit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cad4cad-b76d-4e1e-b6c7-a5009d5e7a8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "642a8bf0-2baf-4cca-9066-5edc820d0f90",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "0617bd68-59e8-4f81-8ace-debcd862fdad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0875c7c7-5c31-4277-8d2e-d8391e8e5f74",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.error",
+      "targets": [],
+      "value": "Deposit Successful"
+    }, {
+      "id": "76a497ec-1d7c-4ed7-a28d-c6b5735f2405",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "33615821-dcf5-4448-afab-5994c2fceb38",
+    "name": "Сustomer can get money from balance",
+    "commands": [{
+      "id": "84cd0e26-d2d8-457c-b045-164503f40862",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cca192f-b91a-4d86-86fa-5e78d0489520",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f29d6611-f119-4852-b6cb-92972beb51a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b25a6f3-b4a1-4601-b2a2-f405a7062d94",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2deb3c3-e7c6-4868-842e-0fe393aa2a23",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "7d1daf36-a560-4589-924b-09496558eb9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13cf42e5-4ad0-46c8-a7d0-f8b18d851ff5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(3)",
+      "targets": [
+        ["css=.btn-lg:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdrawl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c853831-e032-4a45-904c-07d7464ffb5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a366c50d-694a-49fb-9663-e6b663209256",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "51c1a423-3aaa-4e22-88da-21844d2ac419",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe0ae4b7-0760-4475-b69c-1293223097bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.error",
+      "targets": [],
+      "value": "Transaction successful"
+    }, {
+      "id": "c99743e0-b58e-4d57-89be-7f2310e1414e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7f81bd7f-502b-46ce-83f4-60c003d83d99",
+    "name": "Credit is presented in Transaction",
+    "commands": [{
+      "id": "62f720ce-b770-4271-b76a-88c9de261f2e",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d26441cf-80a3-494a-9c03-12dde4f90fac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e90ae7d-ad85-4be3-ada5-15b3f5c86716",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee0503ae-67fa-46d4-9c08-3e279bebfb90",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f32254-09c5-425c-b42f-d2d1ce1d953f",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "e0a7220a-646f-4595-8193-bf57083f57a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89c23163-4438-42b3-882c-7460994b3c9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Transactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "506cf54b-eb8b-4dec-9a62-0ce83254d8ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Date-Time",
+      "targets": [
+        ["linkText=Date-Time", "linkText"],
+        ["css=td:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Date-Time')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Date-Time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bce86f-6004-40f9-8dc0-7af76ccd17bb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#anchor0 > .ng-binding:nth-child(2)",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "2d2bfe8b-1496-4900-8a6f-20b3a33f36ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#anchor0 > .ng-binding:nth-child(3)",
+      "targets": [],
+      "value": "Credit"
+    }, {
+      "id": "63917ec9-d430-4b93-9f10-a4aa44cda26b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0dceaaa2-7cea-434c-a855-f98eab48cbff",
+    "name": "Debit is presented in Transactions",
+    "commands": [{
+      "id": "50fcc010-4ca8-4a96-b681-3903e7b329b1",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64810ccb-67ff-4fe8-857f-5cd149e45aa6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fa4b369-ca26-4ce6-8b04-fede45e6f94d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6b9cce1-38fd-4944-9b55-9b2302da8a2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf84f02c-621f-43ba-97c9-3a24fd9ee663",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "2639454c-f309-415a-8420-02259a658b25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27121e10-6f7a-49ae-a7b6-d86d4690a1c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Transactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96af6c4c-2987-46bd-8f2e-622fa0877daa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Date-Time",
+      "targets": [
+        ["linkText=Date-Time", "linkText"],
+        ["css=td:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Date-Time')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Date-Time')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2306e64d-8499-4231-aa8b-cdb87b3adb95",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#anchor0 > .ng-binding:nth-child(2)",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "35db34ad-c4e9-49f2-a245-dcbef9e93f91",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#anchor0 > .ng-binding:nth-child(3)",
+      "targets": [],
+      "value": "Debit"
+    }, {
+      "id": "63004f23-d202-4043-8a14-14d8645412fc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "98028482-c787-4838-b8c3-9d3fd600a3a2",
+    "name": "Customer can logout",
+    "commands": [{
+      "id": "36482078-aee8-4aa7-818c-8474c6564328",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f516fdf8-3e9e-4b05-a69a-62c9d3a31749",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b415163c-385c-41dd-a6c0-8f03135e3134",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdc69773-19fd-4667-951b-2420419b3c46",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a10b81f-d227-43fb-b224-000d70480988",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "849520ed-71c7-453b-99e3-d9aadf660bac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d6a0402-8458-4a08-b752-6d0867d98fb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logout",
+      "targets": [
+        ["css=.logout", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0b9435f-40e7-4238-9396-da8e973ba5fb",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "/html/body/div/div/div[2]/div/form/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41f0aa38-2be5-4c23-94af-34e901cbf28a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "686d7d1d-8b92-4d66-9580-100b09a169da",
+    "name": "Customer can reset all transactions",
+    "commands": [{
+      "id": "2d4131fd-d57c-4d5f-91cc-1c8811b3a9e5",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a283e426-7bfc-4929-b3e6-c222b8dcbdee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5a0b46e-75da-4977-bec1-a77dacb621ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b81d8ecd-e8d4-41ba-8031-9adaa597a43c",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5847af6f-d645-45c9-8d2a-4cfa5c3a3bde",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "57e79fee-a379-4efd-a8d1-3f072d9ec6be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10da0b33-209b-4085-96aa-8ac5969344bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Transactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4535c020-b47c-44e9-8b1f-f46877cac0ca",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div/div/div[2]/div/div[1]/button[2]",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Transactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ad9d589-ba08-4fe8-ab44-91885de1585f",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=#anchor0 > .ng-binding:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10012de9-be01-48c0-ab23-0bb87a186396",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "16ffaf13-4fb4-44f7-86e1-df1ea0e0eebe",
+    "name": "Customer cant get more then on balance",
+    "commands": [{
+      "id": "978b56a8-2133-4c5c-8151-b36886d9a9bd",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52405465-3015-4f72-aab5-82cc34728beb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7507a862-62cb-43c4-a076-51e9c1d2fff0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1654833a-61f2-417d-979b-73101bb65917",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c58ddf84-b56b-49b6-be7d-4ae5d8c9450e",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "e37669e9-385e-490d-b743-87beeeae99e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a10b4a1c-4757-475a-a5f3-c1bbf40f505b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(3)",
+      "targets": [
+        ["css=.btn-lg:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdrawl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6dd27e0-1ea1-4f5b-9f6c-d9349bab61a6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-lg:nth-child(3)",
+      "targets": [
+        ["css=.btn-lg:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdrawl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "060fadb7-5d21-4781-b359-bff4262479a3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdrawl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6b5ef4-6c63-41c8-8eb7-dda49b857e73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9146db43-67ef-4ba9-a147-23848d89cca2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3001"
+    }, {
+      "id": "c8bfa5f7-2a95-43c9-a9d6-6eac7cf26bab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf125e12-fb84-4fac-ae2d-6a7c64e553dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.error",
+      "targets": [],
+      "value": "Transaction Failed. You can not withdraw amount more than the balance."
+    }, {
+      "id": "27c34ba9-732d-4ebd-9dc3-0b411d2a5e82",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "48dcaaeb-305c-4bf9-8de0-83432f88e410",
+    "name": "Manager can add customer",
+    "commands": [{
+      "id": "3f726809-e331-4497-8583-7bf2956459a3",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f0f983-6b75-4131-9882-3c4b220a855d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97ade2c0-3bb2-41b1-8bbc-e1469e1849f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(3) > .btn",
+      "targets": [
+        ["css=.center:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bank Manager Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdd92160-e442-43c0-9a97-ac0ebc40fd2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Customer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "279466b5-d80d-4817-9aa1-6cd903fb58e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff067bc5-aa9c-418d-8773-3eff78128813",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='text']",
+      "targets": [
+        ["css=.ng-touched", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "John"
+    }, {
+      "id": "2af6dd9a-dcdf-448f-a605-a6836d8c1019",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Douw"
+    }, {
+      "id": "be6185a0-11d8-4e42-abe2-be254fa4327c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[3]",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "b68bf7b4-e006-4e30-b9b4-8dfe0e77ee46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b65224d-2221-4049-9f3c-4e92f7c2be30",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "alert",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2e4c08ee-0168-42ef-89a1-3182f2de5838",
+    "name": "Bank Manager",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "d267d91e-7752-4a9d-847d-3295683883e5",
+    "name": "Customer",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8f12077d-9def-461d-ae46-5ead02b26483", "b45fd1e9-4c4a-4b20-9a48-cbbae4a9a1da", "7f81bd7f-502b-46ce-83f4-60c003d83d99", "16ffaf13-4fb4-44f7-86e1-df1ea0e0eebe", "33615821-dcf5-4448-afab-5994c2fceb38", "0dceaaa2-7cea-434c-a855-f98eab48cbff", "686d7d1d-8b92-4d66-9580-100b09a169da", "98028482-c787-4838-b8c3-9d3fd600a3a2"]
+  }],
+  "urls": ["https://www.globalsqa.com/"],
+  "plugins": []
+}
